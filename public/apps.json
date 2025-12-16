@@ -1,0 +1,402 @@
+[
+  {
+    "id": "app001",
+    "name": "Programming Hero",
+    "developer": "Programming Hero Ltd.",
+    "thumbnail": "https://i.ibb.co/sWbb4Z5/programming-hero-thumb.jpg",
+    "banner": "https://i.ibb.co/vj5rT68/programming-hero-banner.jpg",
+    "downloads": 3500000,
+    "category": "Education",
+    "rating": 4.8,
+    "is_trending": true,
+    "description": "Programming Hero is a fun and interactive way to learn programming, focusing solely on structured educational modules for coding.",
+    "features": [
+      "Interactive coding lessons",
+      "Real-world projects",
+      "Structured curriculum",
+      "Certification paths"
+    ],
+    "reviews": [
+      {
+        "user": "coder_nadia",
+        "rating": 5,
+        "comment": "Best app for beginners! The lessons are super easy to follow and engaging."
+      }
+    ]
+  },
+  {
+    "id": "app002",
+    "name": "FocusFlow Timer",
+    "developer": "Productivity Hub",
+    "thumbnail": "https://i.ibb.co/XXp1JdY/focusflow-thumb.jpg",
+    "banner": "https://i.ibb.co/L5k9XzG/focusflow-banner.jpg",
+    "downloads": 12000000,
+    "category": "Productivity",
+    "rating": 4.7,
+    "is_trending": true,
+    "description": "A dedicated Pomodoro technique timer with deep analytics to strictly manage and track your work sessions and breaks for maximum efficiency.",
+    "features": [
+      "Customizable Pomodoro timer",
+      "Detailed productivity analytics",
+      "Integration with to-do lists",
+      "Session reports and graphs"
+    ],
+    "reviews": [
+      {
+        "user": "efficient_mike",
+        "rating": 4,
+        "comment": "Helps me stay on track. The analytics feature is a game-changer for my workflow."
+      }
+    ]
+  },
+  {
+    "id": "app003",
+    "name": "Aether Wars: RPG",
+    "developer": "PixelForge Games",
+    "thumbnail": "https://i.ibb.co/0Gz0R4C/aetherwars-thumb.jpg",
+    "banner": "https://i.ibb.co/1kL8wQc/aetherwars-banner.jpg",
+    "downloads": 50000000,
+    "category": "Gaming",
+    "rating": 4.5,
+    "is_trending": true,
+    "description": "An epic open-world fantasy RPG, focused purely on immersive gameplay, questing, and high-stakes player-vs-player combat.",
+    "features": [
+      "Massive open world exploration",
+      "Real-time multiplayer battles",
+      "Deep character customization",
+      "Seasonal events and raids"
+    ],
+    "reviews": [
+      {
+        "user": "shadow_knight",
+        "rating": 5,
+        "comment": "Incredible graphics and a compelling story. I can't put it down!"
+      }
+    ]
+  },
+  {
+    "id": "app004",
+    "name": "LangQuest Flashcards",
+    "developer": "Global Linguistics Inc.",
+    "thumbnail": "https://i.ibb.co/gP1t3bK/langquest-thumb.jpg",
+    "banner": "https://i.ibb.co/9qR7vS4/langquest-banner.jpg",
+    "downloads": 8000000,
+    "category": "Education",
+    "rating": 4.9,
+    "is_trending": true,
+    "description": "A language learning tool that focuses on structured vocabulary and grammar lessons, designed by certified linguists for rapid comprehension.",
+    "features": [
+      "30+ languages available",
+      "Structured grammar lessons",
+      "Speech recognition practice",
+      "Progress exams and assessments"
+    ],
+    "reviews": [
+      {
+        "user": "polyglot_pat",
+        "rating": 5,
+        "comment": "The best language app for pure learning. The structured approach is great for fundamentals."
+      }
+    ]
+  },
+  {
+    "id": "app005",
+    "name": "TaskMaster Pro",
+    "developer": "Organize Corp.",
+    "thumbnail": "https://i.ibb.co/tZ5hK0L/taskmaster-thumb.jpg",
+    "banner": "https://i.ibb.co/2N3J4zR/taskmaster-banner.jpg",
+    "downloads": 2500000,
+    "category": "Productivity",
+    "rating": 4.6,
+    "is_trending": false,
+    "description": "An advanced task and project management tool designed for professionals and teams. Organize, track, and delegate work with enterprise-level features.",
+    "features": [
+      "Kanban board view",
+      "Gantt chart visualization",
+      "Team collaboration features",
+      "Recurring task automation"
+    ],
+    "reviews": [
+      {
+        "user": "project_boss",
+        "rating": 4,
+        "comment": "Powerful tool for team management. The collaboration features are top-notch."
+      }
+    ]
+  },
+  {
+    "id": "app006",
+    "name": "Block Builder Sandbox",
+    "developer": "Creative Play Studio",
+    "thumbnail": "https://i.ibb.co/2K9mY2Q/blockbuilder-thumb.jpg",
+    "banner": "https://i.ibb.co/8Y4m7vW/blockbuilder-banner.jpg",
+    "downloads": 150000000,
+    "category": "Gaming",
+    "rating": 4.4,
+    "is_trending": true,
+    "description": "A pure sandbox building game focused on open-ended creativity, exploration, and sharing user-generated content for fun.",
+    "features": [
+      "Unlimited creative mode",
+      "Massive multiplayer servers",
+      "Custom texture pack support",
+      "In-game scripting language"
+    ],
+    "reviews": [
+      {
+        "user": "junior_architect",
+        "rating": 5,
+        "comment": "I love building huge cities! The multiplayer servers are massive and lag-free."
+      }
+    ]
+  },
+  {
+    "id": "app007",
+    "name": "Science Explorer VR",
+    "developer": "Immersive EdTech",
+    "thumbnail": "https://i.ibb.co/f4R1r0G/sciencevr-thumb.jpg",
+    "banner": "https://i.ibb.co/4r9T0zR/sciencevr-banner.jpg",
+    "downloads": 500000,
+    "category": "Education",
+    "rating": 4.7,
+    "is_trending": true,
+    "description": "Explore the human body, outer space, and complex chemical reactions in stunning Virtual Reality. Designed explicitly for school and college curricula.",
+    "features": [
+      "Interactive 3D models",
+      "Virtual lab simulations",
+      "Guided tours by virtual professors",
+      "Curriculum-aligned content"
+    ],
+    "reviews": [
+      {
+        "user": "future_physicist",
+        "rating": 5,
+        "comment": "The best way to visualize hard concepts. It felt like I was inside a cell!"
+      }
+    ]
+  },
+  {
+    "id": "app008",
+    "name": "Goal Tracker RPG",
+    "developer": "Gamified Life Solutions",
+    "thumbnail": "https://i.ibb.co/G03Fw4y/habitica-thumb.jpg",
+    "banner": "https://i.ibb.co/3qJ1W7B/habitica-banner.jpg",
+    "downloads": 6000000,
+    "category": "Productivity",
+    "rating": 4.8,
+    "is_trending": true,
+    "description": "An advanced goal and habit management system. Focuses on metrics, streaks, and accountability to drive real-world results.",
+    "features": [
+      "Advanced goal scheduling",
+      "Detailed streak tracking",
+      "Accountability partners feature",
+      "Integration with calendars"
+    ],
+    "reviews": [
+      {
+        "user": "organized_adventurer",
+        "rating": 5,
+        "comment": "This app is phenomenal for complex goal setting. The metrics keep me highly motivated."
+      }
+    ]
+  },
+  {
+    "id": "app009",
+    "name": "Mind Weaver",
+    "developer": "Creative Tools Co.",
+    "thumbnail": "https://i.ibb.co/W29c4B8/mindweaver-thumb.jpg",
+    "banner": "https://i.ibb.co/jR0nS9v/mindweaver-banner.jpg",
+    "downloads": 850000,
+    "category": "Productivity",
+    "rating": 4.5,
+    "is_trending": false,
+    "description": "An intuitive mind-mapping and project planning tool for efficiently organizing complex business and personal projects.",
+    "features": [
+      "Real-time collaboration",
+      "Templates for project management",
+      "Export to PDF, image, and text",
+      "Integration with cloud storage"
+    ],
+    "reviews": [
+      {
+        "user": "visual_planner",
+        "rating": 4,
+        "comment": "Perfect for project outlines. Being able to link tasks visually is a huge help."
+      }
+    ]
+  },
+  {
+    "id": "app010",
+    "name": "Zen Sudoku Master",
+    "developer": "Brain Games Collective",
+    "thumbnail": "https://i.ibb.co/1q2D4x9/sudoku-thumb.jpg",
+    "banner": "https://i.ibb.co/Q8N3d2h/sudoku-banner.jpg",
+    "downloads": 30000000,
+    "category": "Gaming",
+    "rating": 4.3,
+    "is_trending": false,
+    "description": "A relaxing yet challenging Sudoku app focused purely on traditional number puzzles and relaxation features.",
+    "features": [
+      "Daily challenge mode",
+      "Logic hint system",
+      "Themed visual styles (Zen Garden)",
+      "Tracks completion time and accuracy"
+    ],
+    "reviews": [
+      {
+        "user": "daily_solver",
+        "rating": 5,
+        "comment": "My go-to app for brain exercise. The clean interface and daily puzzles are great."
+      }
+    ]
+  },
+  {
+    "id": "app011",
+    "name": "History Encyclopedia",
+    "developer": "Time Warp Studios",
+    "thumbnail": "https://i.ibb.co/yQ6Z8Nn/historybattles-thumb.jpg",
+    "banner": "https://i.ibb.co/N8m2t42/historybattles-banner.jpg",
+    "downloads": 1500000,
+    "category": "Education",
+    "rating": 4.6,
+    "is_trending": false,
+    "description": "An extensive digital encyclopedia of world history, featuring peer-reviewed articles, timelines, and primary source documents.",
+    "features": [
+      "Chronological timelines",
+      "Primary source document database",
+      "Daily 'on this day' history facts",
+      "In-app encyclopedia of events/figures"
+    ],
+    "reviews": [
+      {
+        "user": "academic_reader",
+        "rating": 5,
+        "comment": "A brilliant, reliable source for historical facts. Much better than generic search engines."
+      }
+    ]
+  },
+  {
+    "id": "app012",
+    "name": "Prose Writer",
+    "developer": "Syntax Software",
+    "thumbnail": "https://i.ibb.co/F8C0JtM/prosewriter-thumb.jpg",
+    "banner": "https://i.ibb.co/0yH0j7K/prosewriter-banner.jpg",
+    "downloads": 550000,
+    "category": "Productivity",
+    "rating": 4.9,
+    "is_trending": false,
+    "description": "A distraction-free writing environment for authors and content creators. Focus purely on your words with powerful organization tools.",
+    "features": [
+      "Minimalist writing interface",
+      "Automated backups and cloud sync",
+      "Goal setting and word count tracking",
+      "Manuscript organization (chapters, scenes)"
+    ],
+    "reviews": [
+      {
+        "user": "avid_author",
+        "rating": 5,
+        "comment": "The best writing app on the market. Simple, powerful, and helps me hit my daily word goals."
+      }
+    ]
+  },
+  {
+    "id": "app013",
+    "name": "Pixel Art Painter",
+    "developer": "Retro Creation Co.",
+    "thumbnail": "https://i.ibb.co/L5hY5M0/pixelart-thumb.jpg",
+    "banner": "https://i.ibb.co/6P2X7J2/pixelart-banner.jpg",
+    "downloads": 4000000,
+    "category": "Gaming",
+    "rating": 4.5,
+    "is_trending": false,
+    "description": "A creative game where users complete challenging pixel-by-pixel coloring puzzles based on famous retro art styles.",
+    "features": [
+      "Daily challenging puzzles",
+      "Pixel art coloring book mode",
+      "Animated pattern creation",
+      "Community puzzle submission"
+    ],
+    "reviews": [
+      {
+        "user": "digital_doodler",
+        "rating": 4,
+        "comment": "A great, simple tool. I use it to relax after work and also to draft game mockups."
+      }
+    ]
+  },
+  {
+    "id": "app014",
+    "name": "Logic Puzzles & Riddles",
+    "developer": "The Enigma Group",
+    "thumbnail": "https://i.ibb.co/Qv62V1y/logicriddles-thumb.jpg",
+    "banner": "https://i.ibb.co/1kL8wQc/logicriddles-banner.jpg",
+    "downloads": 7500000,
+    "category": "Gaming",
+    "rating": 4.2,
+    "is_trending": true,
+    "description": "A collection of brain-teasing logic puzzles, lateral thinking riddles, and nonogram challenges designed purely for entertainment and brain exercise.",
+    "features": [
+      "Hundreds of unique puzzles",
+      "Difficulty levels from easy to expert",
+      "Daily brain training sessions",
+      "Detailed progress tracking"
+    ],
+    "reviews": [
+      {
+        "user": "master_mind",
+        "rating": 5,
+        "comment": "Highly addictive! It's a fun way to keep my mind sharp during my commute."
+      }
+    ]
+  },
+  {
+    "id": "app015",
+    "name": "StudySync Flashcards",
+    "developer": "Student Success Labs",
+    "thumbnail": "https://i.ibb.co/8Y0T3bW/studysync-thumb.jpg",
+    "banner": "https://i.ibb.co/N8m2t42/studysync-banner.jpg",
+    "downloads": 1800000,
+    "category": "Education",
+    "rating": 4.7,
+    "is_trending": false,
+    "description": "A highly-optimized flashcard app utilizing spaced repetition (SRS) for maximizing memory retention across academic subjects.",
+    "features": [
+      "Spaced Repetition System (SRS)",
+      "Create and share custom decks",
+      "Multiple-choice and writing quizzes",
+      "Progress analytics per subject"
+    ],
+    "reviews": [
+      {
+        "user": "med_student_95",
+        "rating": 5,
+        "comment": "The SRS algorithm is incredible. It knows exactly when I need to review a card. Essential for exam prep."
+      }
+    ]
+  },
+  {
+    "id": "app016",
+    "name": "Dungeon Architect",
+    "developer": "Fantasy Dev Team",
+    "thumbnail": "https://i.ibb.co/zH9V0Rj/dungeonarch-thumb.jpg",
+    "banner": "https://i.ibb.co/jR0nS9v/dungeonarch-banner.jpg",
+    "downloads": 900000,
+    "category": "Gaming",
+    "rating": 4.4,
+    "is_trending": false,
+    "description": "A map-making and scenario-building tool for tabletop role-playing games, designed to enhance the GM's creative process.",
+    "features": [
+      "Grid-based map drawing tools",
+      "Asset library for monsters and NPCs",
+      "Built-in physics-accurate dice roller",
+      "One-shot adventure templates"
+    ],
+    "reviews": [
+      {
+        "user": "game_master_alex",
+        "rating": 5,
+        "comment": "Made running my campaign so much easier. The map tools and NPC database are fantastic for prep."
+      }
+    ]
+  }
+]
