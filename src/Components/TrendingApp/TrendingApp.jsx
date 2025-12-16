@@ -1,19 +1,17 @@
 import React from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FreeMode } from 'swiper/modules';
+import { Link, useLoaderData } from "react-router";
 
 import 'swiper/css';
 import 'swiper/css/free-mode';
-import { useLoaderData } from "react-router";
 
 const TrendingApp = () => {
-    // all stats
-    // const [trendingApp, setTrendingApp] = useState([])
 
     const appsData = useLoaderData()
-    // console.log(appsData);
+
     const trendingApp = appsData.filter(app => app.is_trending === true)
-    // console.log(trendingApp);
+
 
   return (
     <div className="w-full space-y-5">
@@ -31,7 +29,7 @@ const TrendingApp = () => {
     >
       {trendingApp.map((app) => (
         <SwiperSlide key={app.id}>
-          <div className="card rounded-xl overflow-hidden">
+          <Link to={`category/${app.id}`} className="card rounded-xl overflow-hidden">
             {/* Image */}
             <figure className="relative h-35 lg:h-50 border-2 rounded-2xl border-gray-300">
               <img
@@ -41,7 +39,7 @@ const TrendingApp = () => {
               />
             </figure>
             <h3 className="text-sm lg:text-lg font-medium mt-2 px-2">{app.name}</h3>
-          </div>
+          </Link>
         </SwiperSlide>
       ))}
     </Swiper>

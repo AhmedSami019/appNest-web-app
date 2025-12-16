@@ -15,7 +15,7 @@ const images = [phIcon, tenMsImg, dropBox, angryBird];
 
 const Slider = () => {
   return (
-    <div className="w-11/12 mx-auto">
+    <div>
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         slidesPerView={1}
