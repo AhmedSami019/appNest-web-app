@@ -1,11 +1,10 @@
-import React from 'react';
+import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="footer bg-base-200 text-base-content p-10">
+    <footer className="footer bg-base-300 mt-10 text-base-content p-10">
       {/* Main Footer Content */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8 w-full max-w-7xl mx-auto">
-        
         {/* Brand / About */}
         <aside>
           <h2 className="text-2xl font-bold text-primary">YourApp</h2>
@@ -109,6 +108,5 @@ const Footer = () => {
     </footer>
   );
 };
-
 
 export default Footer;
