@@ -4,9 +4,11 @@ import logo from "../../assets/logo-of-appNest.jpg"
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100 shadow-sm">
+    <div className="bg-base-100 shadow-sm ">
+
+    <div className="navbar w-11/12 mx-auto">
       <div className="flex-1">
-        <Link className="flex items-center">
+        <Link to={"/"} className="flex items-center">
             <img className="w-16" src={logo} alt="" />
             <h2 className="text-xl font-bold leading-none">App <br />nest</h2>
         </Link>
@@ -24,6 +26,7 @@ const Navbar = () => {
           <button className="btn btn-primary">Log in</button>
         </div>
       </div>
+    </div>
     </div>
   );
 };

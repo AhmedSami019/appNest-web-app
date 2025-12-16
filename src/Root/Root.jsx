@@ -3,9 +3,7 @@ import HomeLayout from '../Layouts/HomeLayout/HomeLayout';
 
 const Root = () => {
     return (
-        <div>
-            <HomeLayout></HomeLayout>
-        </div>
+        <div></div>
     );
 };
 
