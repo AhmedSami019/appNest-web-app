@@ -31,16 +31,16 @@ const TrendingApp = () => {
     >
       {trendingApp.map((app) => (
         <SwiperSlide key={app.id}>
-          <div className="card h-40 lg:h-50 rounded-xl overflow-hidden">
+          <div className="card rounded-xl  overflow-hidden">
             {/* Image */}
-            <figure className="relative h-full w-full border-2 rounded-2xl border-gray-300">
+            <figure className="relative h-35 lg:h-50 border-2 rounded-2xl border-gray-300">
               <img
                 src={app.thumbnail}
                 alt={app.name}
                 className="w-full h-full object-cover"
               />
             </figure>
-            <h3 className="text-sm md:text-lg font-bold mt-2 px-2">{app.name}</h3>
+            <h3 className="text-sm lg:text-lg font-bold mt-2 px-2">{app.name}</h3>
           </div>
         </SwiperSlide>
       ))}
