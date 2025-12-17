@@ -22,6 +22,11 @@
     ],
     "reviews": [
       {
+        "user": "master_mind",
+        "rating": 5,
+        "comment": "Highly addictive! It's a fun way to keep my mind sharp during my commute."
+      },
+      {
         "user": "coder_nadia",
         "rating": 5,
         "comment": "Best app for beginners! The lessons are super easy to follow and engaging."
@@ -427,6 +432,11 @@
       "Progress analytics per subject"
     ],
     "reviews": [
+      {
+        "user": "master_mind",
+        "rating": 5,
+        "comment": "Highly addictive! It's a fun way to keep my mind sharp during my commute."
+      },
       {
         "user": "med_student_95",
         "rating": 5,
