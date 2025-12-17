@@ -6,6 +6,7 @@ const AddReview = () => {
     e.preventDefault();
 
     setSubmit(true);
+    console.log(submit);
     // Swal.fire({
     //   title: "Are you sure?",
     //   text: "You want to send this massage!",
