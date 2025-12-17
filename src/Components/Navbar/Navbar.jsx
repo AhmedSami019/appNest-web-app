@@ -36,7 +36,7 @@ const Navbar = () => {
         <div className="flex-1">
           <Link to={"/"} className="flex items-center">
             <img className="w-16" src={logo} alt="" />
-            <h2 className="text-xl font-bold leading-none hidden md:flex">
+            <h2 className="text-xl text-primary font-bold leading-none hidden md:flex">
               App <br />
               nest
             </h2>
