@@ -18,7 +18,7 @@ const ProductivityApp = () => {
       {" "}
       {/* Added relative for button positioning */}
       <div className="flex justify-between items-center">
-        <h2 className="text-3xl font-bold">All Productivity Apps</h2>
+        <h2 className="text-3xl font-bold">Productivity</h2>
 
         {/* 3. One-sided Navigation Buttons (Top Right) */}
         <div className="flex gap-2">
