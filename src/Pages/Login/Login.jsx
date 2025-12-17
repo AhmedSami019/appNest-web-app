@@ -5,11 +5,8 @@ import Swal from "sweetalert2";
 
 const Login = () => {
   const { loginUser } = use(AuthContext);
-
   const navigate = useNavigate()
-
   const location = useLocation()
-  console.log(location);
 
   const handleLoginUser = (e) => {
     e.preventDefault();

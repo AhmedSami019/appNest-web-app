@@ -6,7 +6,6 @@ import Swal from "sweetalert2";
 
 const Navbar = () => {
   const { user, logOutUser } = use(AuthContext);
-  console.log(user);
 
   // logout handle function
   const handleLogout = () => {
