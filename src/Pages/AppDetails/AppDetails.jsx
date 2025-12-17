@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { IoIosStar } from "react-icons/io";
 import { useLoaderData, useParams } from "react-router";
 import AddReview from "../../Components/AddReview/AddReview";
+import UserReview from "../../Components/UserReview/UserReview";
 
 const AppDetails = () => {
   const { id } = useParams();
@@ -116,29 +117,11 @@ const AppDetails = () => {
         <p className="text-gray-500">{description}</p>
       </div>
       <div className="divider"></div>
+
+
       {/* review section */}
       <div className="mt-5">
-        <h2 className="text-xl font-semibold mb-4">Users review</h2>
-        <div className="space-y-3">
-          {reviews?.map((review, index) => {
-            // console.log(review.user);
-            return (
-              <div
-                key={index}
-                className="border border-gray-300 p-3 rounded-2xl"
-              >
-                <div className="flex justify-between">
-                  <h3 className="text-sm font-medium">{review.user}</h3>
-                  <p className="text-xs flex items-center gap-2">
-                    Rating: {review.rating} <IoIosStar color="gold" />
-                  </p>
-                </div>
-                <p className="text-xs mt-3 text-gray-500">{review.comment}</p>
-              </div>
-            );
-          })}
-        </div>
-          <AddReview></AddReview>
+        <UserReview reviews={reviews}></UserReview>
       </div>
     </div>
   );
