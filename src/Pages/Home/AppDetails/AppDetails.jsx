@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { IoIosStar } from "react-icons/io";
 import { useLoaderData, useParams } from "react-router";
+import AddReview from "../../../Components/AddReview/AddReview";
 
 const AppDetails = () => {
   const { id } = useParams();
@@ -18,6 +19,7 @@ const AppDetails = () => {
           setAppData(app);
         }
       });
+      window.scroll(0, 0);
     }
     filterNews();
   }, [id, allAppData]);
@@ -34,7 +36,6 @@ const AppDetails = () => {
     publish_date,
     version,
     download_size,
-    license,
     reviews,
   } = appData;
 
@@ -76,22 +77,26 @@ const AppDetails = () => {
             <IoIosStar size={20} color="gold" />
           </p>
         </div>
+
         <div>
           <h2 className="text-lg font-medium">Version</h2>
           <p className="text-gray-500 flex items-center justice">{version}</p>
         </div>
+
         <div>
           <h2 className="text-lg font-medium">Download Size</h2>
           <p className="text-gray-500 flex items-center justice">
             {download_size}
           </p>
         </div>
+
         <div>
           <h2 className="text-lg font-medium">Publish Date</h2>
           <p className="text-gray-500 flex items-center justice">
             {publish_date}
           </p>
         </div>
+        
         <div>
           <h2 className="text-lg font-medium">Developer</h2>
           <p className="text-gray-500 flex items-center justice">{developer}</p>
@@ -110,20 +115,30 @@ const AppDetails = () => {
         <h2 className="text-xl font-semibold mt-5">Description</h2>
         <p className="text-gray-500">{description}</p>
       </div>
+      <div className="divider"></div>
       {/* review section */}
       <div className="mt-5">
         <h2 className="text-xl font-semibold mb-4">Users review</h2>
-        <div className="h-56 space-y-3">
+        <div className="space-y-3">
           {reviews?.map((review, index) => {
             // console.log(review.user);
             return (
-              <div key={index} className="border border-gray-300 p-3 rounded-2xl">
-                <h3 className="text-sm font-medium">{review.user}</h3>
-                <p className="text-xs flex items-center gap-2">Rating: {review.rating} <IoIosStar color="gold"/></p>
+              <div
+                key={index}
+                className="border border-gray-300 p-3 rounded-2xl"
+              >
+                <div className="flex justify-between">
+                  <h3 className="text-sm font-medium">{review.user}</h3>
+                  <p className="text-xs flex items-center gap-2">
+                    Rating: {review.rating} <IoIosStar color="gold" />
+                  </p>
+                </div>
+                <p className="text-xs mt-3 text-gray-500">{review.comment}</p>
               </div>
             );
           })}
         </div>
+          <AddReview></AddReview>
       </div>
     </div>
   );
