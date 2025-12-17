@@ -13,7 +13,7 @@ const HomeLayout = () => {
         </nav>
       </header>
       {/* main area */}
-      <main className="w-11/12 mx-auto">
+      <main className="w-11/12 mx-auto mt-30">
         <Outlet></Outlet>
       </main>
       <footer>

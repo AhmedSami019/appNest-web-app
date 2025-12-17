@@ -6,9 +6,9 @@ const Login = () => {
     const {data} = use(AuthContext)
     console.log(data);
   return (
-    <div className=" min-h-screen flex items-center justify-center w-6/12 mx-auto">
+    <div className=" min-h-screen flex items-center justify-center md:w-6/12 mx-auto">
       <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl py-5">
-        <h2 className="text-2xl font-semibold text-center">
+        <h2 className="text-xl md:text-2xl font-semibold text-center">
           Login your account{" "}
         </h2>
         <div className="card-body">

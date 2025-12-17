@@ -1,32 +1,50 @@
-import React from "react";
+import React, { use } from "react";
 import { Link } from "react-router";
-import logo from "../../assets/logo-of-appNest.jpg"
+import logo from "../../assets/logo-of-appNest.jpg";
+import { AuthContext } from "../../Providers/AuthProvider/AuthContext";
 
 const Navbar = () => {
-  return (
-    <div className="bg-base-100 shadow-sm ">
+  const { user, setUser } = use(AuthContext);
+  console.log(user);
 
-    <div className="navbar w-11/12 mx-auto">
-      <div className="flex-1">
-        <Link to={"/"} className="flex items-center">
+  // logout handle function
+  const handleLogout = ()=>{
+    // setUser(null)
+    console.log("user logged out");
+  }
+
+  return (
+    <div className="bg-base-100 shadow-sm fixed top-0 left-0 right-0 z-20">
+      <div className="navbar w-11/12 mx-auto">
+        <div className="flex-1">
+          <Link to={"/"} className="flex items-center">
             <img className="w-16" src={logo} alt="" />
-            <h2 className="text-xl font-bold leading-none hidden md:flex">App <br />nest</h2>
-        </Link>
-      </div>
-      <div className="flex-none">
-        {/* user section */}
-        <div className="space-x-2">
+            <h2 className="text-xl font-bold leading-none hidden md:flex">
+              App <br />
+              nest
+            </h2>
+          </Link>
+        </div>
+        <div className="flex-none">
+          {/* user section */}
+          <div className="space-x-2">
             {/* user abater */}
-          <div className="avatar avatar-online">
-            <div className="w-10 rounded-full">
-              <img src="https://img.daisyui.com/images/profile/demo/gordon@192.webp" />
+            <div className="avatar avatar-online">
+              <div className="w-10 rounded-full">
+                <img src="https://img.daisyui.com/images/profile/demo/gordon@192.webp" />
+              </div>
             </div>
+            {/* sign in of sign out button */}
+            {user ? (
+              <Link onClick={handleLogout} className="btn btn-primary">Log out</Link>
+            ) : (
+              <Link to={"/auth/login"} className="btn btn-primary">
+                Log in
+              </Link>
+            )}
           </div>
-          {/* sign in of sign out button */}
-          <Link to={"/auth/login"} className="btn btn-primary">Log in</Link>
         </div>
       </div>
-    </div>
     </div>
   );
 };
