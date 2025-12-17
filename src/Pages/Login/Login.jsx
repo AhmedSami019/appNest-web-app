@@ -1,10 +1,37 @@
 import React, { use } from "react";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import { AuthContext } from "../../Providers/AuthProvider/AuthContext";
+import Swal from "sweetalert2";
 
 const Login = () => {
-    const {data} = use(AuthContext)
-    console.log(data);
+  const { loginUser } = use(AuthContext);
+
+  const navigate = useNavigate()
+
+  const handleLoginUser = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const email = form.email.value;
+    const password = form.password.value;
+    
+    // call the function
+    loginUser(email, password)
+    .then((result) => {
+      Swal.fire({
+        title: `user logged in successfully`,
+        icon: "success",
+        timer: 1500,
+      });
+      navigate("/")
+    }).catch(error =>{
+        Swal.fire({
+            title: `Oops! ${error.code}`,
+            icon: "error",
+            timer: 1500
+        })
+    })
+  };
+
   return (
     <div className=" min-h-screen flex items-center justify-center md:w-6/12 mx-auto">
       <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl py-5">
@@ -12,7 +39,7 @@ const Login = () => {
           Login your account{" "}
         </h2>
         <div className="card-body">
-          <form className="fieldset">
+          <form onSubmit={handleLoginUser} className="fieldset">
             {/* email */}
             <label className="label">Email</label>
             <input

@@ -33,6 +33,7 @@ export const router = createBrowserRouter([
     Component: AuthLayout,
     children: [
         {
+            index: true,
             path: "/auth/login",
             Component: Login
         },

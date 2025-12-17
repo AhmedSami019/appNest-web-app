@@ -1,10 +1,11 @@
 import React, { use } from "react";
 import { Link } from "react-router";
 import { AuthContext } from "../../Providers/AuthProvider/AuthContext";
+import Swal from "sweetalert2";
 
 const Register = () => {
 
-    const {createNewUser} = use(AuthContext)
+    const {createNewUser, setUser, updateUser} = use(AuthContext)
 
     // function to handle new user creation
     const handleCreateNewUser = (e)=>{
@@ -19,9 +20,29 @@ const Register = () => {
 
         createNewUser(email, password)
         .then(result => {
-            console.log(result.user);
+            const newUser = result.user
+            console.log(newUser);
+            updateUser({displayName: name, photoURL: photo})
+            .then(()=>{
+                setUser({...newUser, displayName: name, photoURL: photo })
+                Swal.fire({
+                    title: `user created successfully`,
+                    icon: "success",
+                    timer: 1500
+                })
+            }).catch(error =>{
+                Swal.fire({
+                    title: `in ${error.code} have problem`,
+                    icon: "error",
+                    timer: 1500
+                })
+            })
         }).catch(error=>{
-            alert(error.code);
+            Swal.fire({
+                    title: `in ${error.code} have problem`,
+                    icon: "error",
+                    timer: 1500
+                })
         })
     }
 
