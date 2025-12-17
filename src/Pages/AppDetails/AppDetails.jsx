@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { IoIosStar } from "react-icons/io";
 import { useLoaderData, useParams } from "react-router";
-import AddReview from "../../../Components/AddReview/AddReview";
+import AddReview from "../../Components/AddReview/AddReview";
 
 const AppDetails = () => {
   const { id } = useParams();
