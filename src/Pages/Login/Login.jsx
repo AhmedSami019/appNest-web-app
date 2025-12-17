@@ -1,5 +1,5 @@
 import React, { use } from "react";
-import { Link, useNavigate } from "react-router";
+import { Link, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../../Providers/AuthProvider/AuthContext";
 import Swal from "sweetalert2";
 
@@ -7,6 +7,9 @@ const Login = () => {
   const { loginUser } = use(AuthContext);
 
   const navigate = useNavigate()
+
+  const location = useLocation()
+  console.log(location);
 
   const handleLoginUser = (e) => {
     e.preventDefault();
@@ -22,7 +25,7 @@ const Login = () => {
         icon: "success",
         timer: 1500,
       });
-      navigate("/")
+      navigate(`${location.state ? location.state : "/"}`)
     }).catch(error =>{
         Swal.fire({
             title: `Oops! ${error.code}`,

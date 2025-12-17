@@ -13,27 +13,30 @@ import { app } from "../../firebase/firebase_init_js";
 const AuthProvider = ({ children }) => {
   // all states
   const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   const auth = getAuth(app);
   //   function for create user
   const createNewUser = (email, password) => {
+    setLoading(true);
     return createUserWithEmailAndPassword(auth, email, password);
   };
 
-//   signIn user function
-const loginUser = (email, password)=>{
-    return signInWithEmailAndPassword(auth, email, password)
-}
+  //   signIn user function
+  const loginUser = (email, password) => {
+    setLoading(true);
+    return signInWithEmailAndPassword(auth, email, password);
+  };
 
-// update user 
-const updateUser = (userData)=>{
-    return updateProfile(auth.currentUser, userData)
-}
+  // update user
+  const updateUser = (userData) => {
+    return updateProfile(auth.currentUser, userData);
+  };
 
-// for logout user
-const logOutUser = ()=>{
-    return signOut(auth)
-}
+  // for logout user
+  const logOutUser = () => {
+    return signOut(auth);
+  };
 
   // user observer
   useEffect(() => {
@@ -41,6 +44,7 @@ const logOutUser = ()=>{
       console.log(currentUser);
       if (currentUser) {
         setUser(currentUser);
+        setLoading(false);
       }
     });
     return () => {
@@ -56,7 +60,9 @@ const logOutUser = ()=>{
     updateUser,
     logOutUser,
     user,
-    setUser
+    setUser,
+    loading,
+    setLoading,
   };
   return <AuthContext value={authData}>{children}</AuthContext>;
 };

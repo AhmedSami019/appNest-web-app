@@ -8,6 +8,7 @@ import { Component } from "react";
 import AuthLayout from "../Layouts/AuthLayout/AuthLayout";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
+import PrivateRoute from "../Providers/PrivateRoute/PrivateRoute";
 
 export const router = createBrowserRouter([
   {
@@ -22,7 +23,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "category/:id",
-        Component: AppDetails,
+        element: <PrivateRoute><AppDetails></AppDetails></PrivateRoute>,
         loader: () => fetch("/apps.json"),
         hydrateFallbackElement: <Loading></Loading>,
       },
