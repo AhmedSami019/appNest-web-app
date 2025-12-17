@@ -15,18 +15,19 @@ const Navbar = () => {
     logOutUser()
       .then(() => {
         Swal.fire({
-        title: "Logout successful",
-        icon: "success",
-        timer: 1500,
-      });
+          title: "Logout successful",
+          icon: "success",
+          timer: 1500,
+        });
+        window.location.href = "/";
       })
       .catch((error) => {
         Swal.fire({
-        icon: "error",
-        title: "Oops...",
-        text: `${error.code}`,
-        timer: 1500,
-      });
+          icon: "error",
+          title: "Oops...",
+          text: `${error.code}`,
+          timer: 1500,
+        });
       });
   };
 
@@ -47,9 +48,11 @@ const Navbar = () => {
           <div className="space-x-2">
             {/* user abater */}
             <div className="avatar avatar-online">
-              <div className="w-10 rounded-full">
-                <img src="https://img.daisyui.com/images/profile/demo/gordon@192.webp" />
-              </div>
+              {user && (
+                <div className="w-10 border rounded-full">
+                  <img src={user && user.photoURL} />
+                </div>
+              )}
             </div>
             {/* sign in of sign out button */}
             {user ? (

@@ -1,11 +1,12 @@
 import React, { use } from "react";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import { AuthContext } from "../../Providers/AuthProvider/AuthContext";
 import Swal from "sweetalert2";
 
 const Register = () => {
 
     const {createNewUser, setUser, updateUser} = use(AuthContext)
+      const navigate = useNavigate()
 
     // function to handle new user creation
     const handleCreateNewUser = (e)=>{
@@ -30,6 +31,7 @@ const Register = () => {
                     icon: "success",
                     timer: 1500
                 })
+                navigate("/")
             }).catch(error =>{
                 Swal.fire({
                     title: `in ${error.code} have problem`,
