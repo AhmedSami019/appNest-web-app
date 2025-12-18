@@ -4,7 +4,8 @@ import { AuthContext } from "../../Providers/AuthProvider/AuthContext";
 import Swal from "sweetalert2";
 
 const Register = () => {
-  const { createNewUser, setUser, updateUser, loginWithGoogle } = use(AuthContext);
+  const { createNewUser, setUser, updateUser, loginWithGoogle } =
+    use(AuthContext);
   const navigate = useNavigate();
 
   // function to handle new user creation
@@ -49,26 +50,26 @@ const Register = () => {
       });
   };
 
-   // google sign in handler
-    const handleGoogleLogin = () => {
-      loginWithGoogle()
-        .then(() => {
-          Swal.fire({
-            title: `user logged in successfully`,
-            icon: "success",
-            timer: 1500,
-          });
-          navigate(`${location.state ? location.state : "/"}`);
-        })
-        .catch((error) => {
-          console.log(error);
-          Swal.fire({
-            title: `Oops! ${error.code}`,
-            icon: "error",
-            timer: 1500,
-          });
+  // google sign in handler
+  const handleGoogleLogin = () => {
+    loginWithGoogle()
+      .then(() => {
+        Swal.fire({
+          title: `user logged in successfully`,
+          icon: "success",
+          timer: 1500,
         });
-    };
+        navigate(`${location.state ? location.state : "/"}`);
+      })
+      .catch((error) => {
+        console.log(error);
+        Swal.fire({
+          title: `Oops! ${error.code}`,
+          icon: "error",
+          timer: 1500,
+        });
+      });
+  };
 
   return (
     <div className="flex justify-center items-center min-h-screen md:w-6/12 mx-auto">
@@ -115,6 +116,7 @@ const Register = () => {
               className="input"
               name="password"
               placeholder="Password"
+              pattern="(?=.*[A-Z])(?=.*[a-z]).{6,}"
               required
             />
             <button type="submit" className="btn btn-primary mt-4">
@@ -123,7 +125,10 @@ const Register = () => {
           </form>
           <div className="divider">or</div>
           <div>
-            <button onClick={handleGoogleLogin} className="btn bg-gray-200 text-black border-[#e5e5e5] w-full">
+            <button
+              onClick={handleGoogleLogin}
+              className="btn bg-gray-200 text-black border-[#e5e5e5] w-full"
+            >
               <svg
                 aria-label="Google logo"
                 width="16"
