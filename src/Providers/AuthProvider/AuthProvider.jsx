@@ -10,7 +10,7 @@ import {
   signOut,
   updateProfile,
 } from "firebase/auth";
-import { app } from "../../firebase/firebase_init_js";
+import { app } from "../../firebase/firebase.config";
 
 const AuthProvider = ({ children }) => {
   // all states
