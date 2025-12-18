@@ -1,4 +1,5 @@
 import React from "react";
+import { FaFacebook } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -44,24 +45,17 @@ const Footer = () => {
           <h6 className="footer-title">Connect</h6>
           <div className="flex gap-4">
             <a
-              href="https://twitter.com"
+              href="https://www.facebook.com/profile.php?id=100066294463471"
               target="_blank"
               rel="noreferrer"
               className="btn btn-ghost btn-circle"
               aria-label="Twitter"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M24 4.557a9.93 9.93 0 01-2.828.775 4.93 4.93 0 002.165-2.724 9.864 9.864 0 01-3.127 1.195 4.916 4.916 0 00-8.38 4.482A13.94 13.94 0 011.671 3.149a4.916 4.916 0 001.523 6.573 4.903 4.903 0 01-2.229-.616v.061a4.916 4.916 0 003.946 4.827 4.996 4.996 0 01-2.224.084 4.918 4.918 0 004.588 3.417A9.867 9.867 0 010 19.54a13.94 13.94 0 007.548 2.212c9.057 0 14.01-7.496 14.01-13.986 0-.21 0-.423-.015-.637A9.936 9.936 0 0024 4.557z" />
-              </svg>
+              <FaFacebook size={20}/>
             </a>
 
             <a
-              href="https://github.com"
+              href="https://github.com/AhmedSami019"
               target="_blank"
               rel="noreferrer"
               className="btn btn-ghost btn-circle"
@@ -82,7 +76,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/ahmedsami019/"
               target="_blank"
               rel="noreferrer"
               className="btn btn-ghost btn-circle"
