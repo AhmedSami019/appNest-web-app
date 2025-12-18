@@ -45,7 +45,7 @@ const Login = () => {
         navigate(`${location.state ? location.state : "/"}`);
       })
       .catch((error) => {
-        console.log(error);
+        // console.log(error);
         Swal.fire({
           title: `Oops! ${error.code}`,
           icon: "error",

@@ -17,12 +17,12 @@ const Register = () => {
     const email = form.email.value;
     const password = form.password.value;
 
-    console.log(name, photo, email, password);
+    // console.log(name, photo, email, password);
 
     createNewUser(email, password)
       .then((result) => {
         const newUser = result.user;
-        console.log(newUser);
+        // console.log(newUser);
         updateUser({ displayName: name, photoURL: photo })
           .then(() => {
             setUser({ ...newUser, displayName: name, photoURL: photo });
@@ -62,7 +62,7 @@ const Register = () => {
         navigate(`${location.state ? location.state : "/"}`);
       })
       .catch((error) => {
-        console.log(error);
+        // console.log(error);
         Swal.fire({
           title: `Oops! ${error.code}`,
           icon: "error",

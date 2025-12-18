@@ -10,7 +10,7 @@ const Navbar = () => {
   // logout handle function
   const handleLogout = () => {
     // setUser(null)
-    console.log("user logged out");
+    // console.log("user logged out");
     logOutUser()
       .then(() => {
         Swal.fire({

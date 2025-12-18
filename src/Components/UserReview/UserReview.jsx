@@ -14,7 +14,7 @@ const UserReview = ({ reviews }) => {
           setAllReviews(reviews);
         }
       } catch (error) {
-        console.error("Failed to update reviews:", error);
+        // console.error("Failed to update reviews:", error);
       }
     };
 
