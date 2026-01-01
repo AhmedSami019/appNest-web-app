@@ -16,3 +16,5 @@ this is a web application of to install or explore application in browser. but i
 ## Explore the website
 [AppNest](https://appnest-auth.web.app/)
 
+## Presentation off data entry
+[slideShow](https://docs.google.com/presentation/d/1WPtNmphfGdwAd730-EkTYJllDySeiyFDWSB2eZt5xUQ/edit?usp=sharing)
