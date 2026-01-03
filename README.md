@@ -18,3 +18,4 @@ this is a web application of to install or explore application in browser. but i
 
 ## Presentation off data entry
 [slideShow](https://docs.google.com/presentation/d/1WPtNmphfGdwAd730-EkTYJllDySeiyFDWSB2eZt5xUQ/edit?usp=sharing)
+its for other application. just a presentation
