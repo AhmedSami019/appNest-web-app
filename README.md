@@ -19,3 +19,6 @@ this is a web application of to install or explore application in browser. but i
 ## Presentation off data entry
 [slideShow](https://docs.google.com/presentation/d/1WPtNmphfGdwAd730-EkTYJllDySeiyFDWSB2eZt5xUQ/edit?usp=sharing)
 its for other application. just a presentation
+
+## my resume
+[resume](https://docs.google.com/document/d/1K3FPrh-C-cWWsQaJK7y1MbU2P8euvrRR425e55PNJ_Q/edit?tab=t.0#heading=h.5rf9wr4r3no2)
